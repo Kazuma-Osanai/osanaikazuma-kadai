@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <title>JS課題 1-1</title>
+</head>
+<body>
+<script>
+    document.write("変数 number に 1～10 の数値が代入されている場合は画面に「正常」、そうでない場合は「エラー」と表示");
+
+    //正常
+    var number = 7;
+
+    //エラー
+    // var number = -4;
+
+    if(1 <= number && 10 >= number) {
+        alert('正常\n'+'number='+number);
+    } else {
+        alert('エラー\n'+'number='+number);
+    }
+</script>
+</body>
+</html>

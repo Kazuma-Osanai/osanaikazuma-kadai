@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <title>JS課題 1-4</title>
+</head>
+<body>
+<script>
+    document.write("配列変数の各要素の数値を合計する関数srrSumを用いて合計値を表示");
+    
+    var arrayNum = [20,30,5];
+
+    function arrSum(arrayNum) {
+        var sum = 0;
+        for(var i = 0; i <= 2; i++) {
+            var sum = sum + arrayNum[i];
+        }
+        return sum;
+    }
+
+    alert(
+        "税別:" + arrayNum + "\n" +
+        "合計:" + arrSum(arrayNum)
+    );
+
+</script>
+</body>
+</html>

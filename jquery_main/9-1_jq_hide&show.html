@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>9-1_jq_hide&show</title>
+</head>
+<body>    
+    <h1>TEST.</h1>
+    <div>
+        <img src="img/suizokukan.jpg">
+    </div>
+
+    <script>
+        $(function(){
+            $('img').click(function(){
+                $('img').hide();
+            });
+
+            $('h1').click(function(){
+                $('img').show();
+            });
+        });
+
+    </script>
+</body>
+</html>

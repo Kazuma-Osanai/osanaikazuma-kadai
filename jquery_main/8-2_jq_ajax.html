@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>8-2_jq_ajax</title>
+</head>
+<body>    
+    <button>変更</button>
+    <p>変更前</p>
+
+    <script>
+        $(function(){
+            $('button').click(function(){
+                $('p').load('./sample.txt');
+            })
+        });
+
+    </script>
+</body>
+</html>

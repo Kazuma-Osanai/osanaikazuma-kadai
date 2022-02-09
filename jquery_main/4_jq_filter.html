@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>4_jq_filter</title>
+</head>
+<body>    
+    <h1>TEST.</h1>
+
+    <ul>
+        <li>ここに色がつく</li>
+        <li>※※※※※※</li>
+        <li>※※※※※※</li>
+    </ul>
+
+    
+    <script>
+        $(function() {
+            $("li:first").css( "backgroundColor", "red" );
+        });
+    </script>
+</body>
+</html>

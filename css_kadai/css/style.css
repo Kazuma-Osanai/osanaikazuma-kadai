@@ -1,0 +1,36 @@
+/*1．CSS*/
+/*(1)*/
+h2.font1 { color: blue; }
+
+/*(2)*/
+h2.font2 { color: green; font-size: 30px; }
+
+/*(3)*/
+a.torikesisen {text-decoration: line-through;}
+
+/*(4)*/
+div.background {color: white; background-color: steelblue; width: 500px;}
+
+/*(5)*/
+div#contents {width: 500px;}
+div#main {background-color: gainsboro; padding: 10px; border-color: dimgray; border-style: solid; border-width: 2px;}
+h1.style {background-color: thistle; padding: 20px 10px; border-color: dimgray; border-style: double; border-width: 4px;}
+
+/*2.リンク*/
+/*(1)*/
+div.haikei {width: 500px; height: 250px; background-image: url("../img/bg.jpg")}
+
+/*(2)*/
+a.rinku {font-family: "MS UI Gothic"; font-weight :bold;}
+a.rinku:link {color:blue;}
+a.rinku:visited {color:purple;}
+a.rinku:hover {font-style: oblique;}
+
+/*3.表*/
+/*(1)*/
+table.style {border: black solid 2px ; width: 300px; text-align: center;}
+td {border: black solid 1px ;}
+
+/*(2)*/
+table.wakusen {border: black solid 1px; border-collapse: collapse;}
+th {border: black solid 1px ; color: white; background-color: steelblue;}

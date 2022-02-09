@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>10_jq_kadai</title>
+</head>
+<body>    
+    <ul>
+        <li><a href="./img/flower.jpg">画像1</a></li>
+        <li><a href="./img/sea.jpg">画像1_1</a></li>
+        <li><a href="./img/dog.png">画像2</a></li>
+        <li><a href="./img/buillding.jpg">画像3</a></li>
+        </ul>
+        <p><img src="./img/suizokukan.jpg" alt="初期" /></p>
+        
+    <script>
+        $(function() {
+            $('a').click(function() {
+                $('img').attr('src',$(this).attr('href'))
+                .attr('alt',$(this).text());
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

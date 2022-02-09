@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>6-4_jq_event1</title>
+</head>
+<body>    
+    <ul>
+        <li><a href="./img/flower.jpg">花</a></li>
+        <li><a href="./img/sea.jpg">海</a></li>
+        <li><a href="./img/dog.png">犬</a></li>
+        <li><a href="./img/buillding.jpg">建物</a></li>
+        </ul>
+        <p><img src="./img/flower.jpg" alt="花" /></p>
+        
+    <script>
+        $(function() {
+            $('a').click(function() {
+                $('img').attr('src',$(this).attr('href'))
+                .attr('alt',$(this).text());
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

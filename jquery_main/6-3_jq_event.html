@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>6-3_jq_event</title>
+</head>
+<body>    
+    <a href="javascript:void(0)">画像を変更</a>
+    <br />
+    <a href="https://www.yahoo.co.jp/"><img src="./img/suizokukan.jpg" alt="suizokukan"></a>
+
+    <script>
+        $(function(){
+            $('a').click(function(){
+                $('img').attr('src','./img/ei.jpg').attr('alt','ei');
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

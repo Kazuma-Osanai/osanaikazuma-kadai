@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>4_jq_selector_id_class</title>
+</head>
+<body>    
+    <h1>TEST.</h1>
+
+    <div>
+        <a id="msg_id_text">(id)テキストを入力:</a>
+        <br />
+        <a id="msg_class_text">(class)テキストを入力:</a>
+    </div>
+
+    <div>
+        <input id="text_id" class="text_class" type="text">
+        <input id="click" type="button"  value="Check">
+    </div>
+
+    
+    <script>
+
+        $(function () {
+            $('#click').click(function() {
+                var msg_id = 'あなたは、"' + $('#text_id').val() + '"と書きました。(#id)';
+                $("#msg_id_text").text(msg_id);
+                var msg_class = 'あなたは、"' + $('.text_class').val() + '"と書きました。(.class)';
+                $("#msg_class_text").text(msg_class);
+            });
+        });
+
+    </script>
+</body>
+</html>

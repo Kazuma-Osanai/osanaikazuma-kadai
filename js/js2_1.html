@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <title>JS課題 2-1</title>
+</head>
+<body>
+<script>
+    document.write("文字列をチェックする関数stringCheckを用いて結果を表示");
+    
+    //半角英数字
+    var mozi = "F1";
+    //半角英数字ではない
+    // var mozi = "F1サーキット";
+
+    if(mozi.match(/^[A-Za-z0-9]*$/)) {
+        check = "半角英数字です";
+    } else {
+        check = "半角英数字ではありません";
+    }
+
+    alert(
+        "文字列:" + mozi + "\n" +
+        "文字列の長さ:" + mozi.length + "\n" +
+        check
+    );
+
+</script>
+</body>
+</html>

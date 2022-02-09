@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv = "content-type" charset = "UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>5-7_jq_method_chain</title>
+</head>
+<body>    
+    <p id="color">背景色が変わる</p>
+    <p id="font">文字の大きさが変わる</p>
+    <a id="link" href="https://www.google.com/?hl=ja">リンク先が変わる</a>
+    <br />
+    <img src="./img/suizokukan.jpg"></a>
+    <br />
+    <input type="button" id="click" value="Click">
+
+    <script>
+        $(function () {
+            $('img').width('500px');
+
+            $('#click').click(function() {
+                $('img').width('600px');
+                $('p#color').css('backgroundColor' , 'yellow');
+                $('p#font').css('fontSize' , '10px');
+                $('a#link').attr('href','https://www.yahoo.co.jp/');
+            });
+        });
+    </script>
+</body>
+</html>
